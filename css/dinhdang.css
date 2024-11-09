@@ -11,9 +11,12 @@ body{
      -webkit-box-sizing:border-box ; 
      } 
      .box-menu{ 
-      background-color: rgb(221, 18, 18);
+      background-color: #D6B679;
       line-height: 1cm; 
       text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
      } 
      .box-menu ul{ 
       display: inline-flex ; 
@@ -22,6 +25,9 @@ body{
       font-size: 18px;
       font-weight: 400;
      } 
+     .box-menu ul :hover{ 
+      color:#fff700; 
+     }
      .box-menu ul li{ 
       width: 125px; 
       margin: 5px;
@@ -100,7 +106,7 @@ body{
        .box-menu ul li:hover .box-submenu{ 
         display:block;
         position:absolute; 
-        background: rgb(221, 18, 18); 
+        background: #D6B679; 
         margin-top: 10px; 
         margin-left: -10px; 
        } 
@@ -123,7 +129,7 @@ body{
        border-bottom: none; 
        } 
        .box-menu ul li:hover .box-submenu ul li a:hover{ 
-       color:#ffcc00; 
+       color:#fff700; 
        } 
        .box-submenu-2{ 
         display: none; 
@@ -205,18 +211,18 @@ body{
       
   .hero {
     background: url('hero-image.jpg') no-repeat center center/cover;
-    color: rgb(221, 18, 18); 
+    color: #ffcc00; 
     text-align: center;
     padding: 100px 20px;
 }
 .hero h1 {
-  font-size: 40px;
+  font-size: 50px;
 }
 .chu3 {
   text-align: left;
   font-size: 40px;
   font-weight: bold;
-  color:#ffcc00;
+  color:rgba(255, 0, 0, 0.873);
  
 }
 .hero h2 {
@@ -227,7 +233,7 @@ body{
 .hero p {
     font-size: 1.2em;
     margin-bottom: 20px;
-    color:red;
+    color:rgba(255, 0, 0, 0.873);
 }
 .reviews {
   display: flex;
@@ -270,7 +276,7 @@ body{
 }
 
 footer {
-  background: rgb(221, 18, 18); 
+  background: #D6B679; 
   color: #fff;
   padding: 20px 0;
   text-align: center;
@@ -282,20 +288,70 @@ footer {
 }
 
 .footer-content a {
-  color: #ffcc00;
+  color: white;
   text-decoration: none;
   margin: 0 10px;
 }
 
 .footer-content a:hover {
   text-decoration: underline;
+  color:#fff700;
 }
 .container h1 {
   text-align: center;
-  color: red
+  color: #ffcc00;
 }
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+}
+.form-container {
+  background-color: white;
+  width: 100%;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+button{
+    background-color: rgb(239, 16, 16);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color:#fdce11;
+}
+.menu-icons {
+  display: flex;
+  align-items: center;
+}
+
+.menu-icons a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-icons a:nth-child(3) {
+  margin-left: 50px; /* Adjust this value to increase/decrease spacing */
+}
+
+.menu-icons a:hover {
+  color: #FFD700;
+}
+
+.menu-icons i {
+  font-size: 24px;
+  margin-right: 18px;
+
 }
