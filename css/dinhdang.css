@@ -211,7 +211,7 @@ body{
       
   .hero {
     background: url('hero-image.jpg') no-repeat center center/cover;
-    color: #ffcc00; 
+    color: rgb(39, 39, 39);
     text-align: center;
     padding: 100px 20px;
 }
@@ -222,7 +222,7 @@ body{
   text-align: left;
   font-size: 40px;
   font-weight: bold;
-  color:rgba(255, 0, 0, 0.873);
+  color:#d19c38;
  
 }
 .hero h2 {
@@ -233,7 +233,7 @@ body{
 .hero p {
     font-size: 1.2em;
     margin-bottom: 20px;
-    color:rgba(255, 0, 0, 0.873);
+    color:#d19c38;
 }
 .reviews {
   display: flex;
@@ -299,7 +299,7 @@ footer {
 }
 .container h1 {
   text-align: center;
-  color: #ffcc00;
+  color: rgb(39, 39, 39);
 }
 .container {
   max-width: 1200px;
@@ -327,31 +327,4 @@ button{
 
 button:hover {
     background-color:#fdce11;
-}
-.menu-icons {
-  display: flex;
-  align-items: center;
-}
-
-.menu-icons a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  margin-left: 15px;
-  display: flex;
-  align-items: center;
-}
-
-.menu-icons a:nth-child(3) {
-  margin-left: 50px; /* Adjust this value to increase/decrease spacing */
-}
-
-.menu-icons a:hover {
-  color: #FFD700;
-}
-
-.menu-icons i {
-  font-size: 24px;
-  margin-right: 18px;
-
 }
